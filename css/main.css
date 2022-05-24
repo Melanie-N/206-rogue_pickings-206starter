@@ -6,7 +6,6 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-flow: row wrap;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: 1em;
 }
@@ -17,7 +16,7 @@ body {
 	justify-content: center;
 	flex-flow: row wrap;
 	max-width: 1200px;
-	margin: 0 auto;
+	width: 90%;
 }
 
 h1,
@@ -40,7 +39,6 @@ h3 {
 p {
 	font-size: .875em;
 	line-height: 21px;
-    padding: 0 30px;
 }
 
 /*The widths are in a percentage!*/
@@ -49,33 +47,40 @@ header {
 	align-items: center;
 	justify-content: center;
 	flex-flow: row wrap;
-	height: 110px;
 	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
+	width: 100%;
+	text-align: center;
 }
 
 header h1 {
+	border-bottom: 3px solid #77a466;
 	margin: 0;
-	padding: 38px 0;
+	padding: 38px 20px 20px 20px;
+	width: 100%;
 }
+
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	padding: 46px 0;
+	padding: 20px 0;
+	width: 100%;
 }
+
 header nav ul {
 	margin: 0;
 	padding: 0;
 }
+
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size:  .875em;
-	padding: 0 10px;
-	display: inline;
+	padding: 10px 0;
+	list-style: none;
 }
+
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
@@ -88,12 +93,9 @@ header nav ul li a{
 	align-items: center;
 	justify-content: center;
 	flex-flow: row wrap;
-	margin: 0 auto;
 }
 
-.main-image {
-	height: auto;
-}
+
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
@@ -109,30 +111,15 @@ header nav ul li a{
 }
 .main-title p {
 	padding: 0;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 25px;
 }
 
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
-	height: auto;
+	width: 100%;
 	border-top: 1px solid #eee;
-}
-
-.section-one h3 {
-	padding: 10px 0;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-
-.section-two h3,
-.section-three h3 {
-	padding: 10px 30px;
 }
 
 .menu {
@@ -146,12 +133,12 @@ header nav ul li a{
 
 .reviews {
 	color: #333;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 21px;
 }
 
 .address {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 24px;
 }
 
@@ -161,14 +148,21 @@ footer {
 	align-items: center;
 	justify-content: center;
 	flex-flow: row wrap;
-	height: 50px;
 	border-top: 3px solid #eee;
-	margin: 0 auto;
 	text-align: center;
+	width: 100%;
 }
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 14px;
+	font-size: .875px;
+}
+
+@media all and (min-width: 768px) {
+	/* tablet styles here */
+}
+
+@media all and (min-width: 1200px) {
+	/* desktop styles here */
 }
