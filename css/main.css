@@ -161,8 +161,50 @@ footer span {
 
 @media all and (min-width: 768px) {
 	/* tablet styles here */
-}
 
+	.bottom-section {
+		align-items: flex-start;
+		flex-flow: row;
+		justify-content: space-between;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		flex-basis: 33%;
+	}
+
+	.section-one,
+	.section-two{
+		border-right: 1px solid #eee;
+	}
+
+	.section-two,
+	.section-three{
+		padding: 0 20px;
+	}
+}
 @media all and (min-width: 1200px) {
 	/* desktop styles here */
+
+	header{
+	justify-content: flex-start;
+	flex-flow: row nowrap;
+	text-align: left;
+	}
+
+	header nav{
+		width: 40%;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header h1 {
+		width:60%;
+		padding: 0;
+		border-bottom: none;
+	}
 }
